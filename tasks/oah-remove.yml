@@ -1,0 +1,8 @@
+---
+- debug:
+    msg: "oah-remove of oah.jupyter"
+
+- name: Uninstalling jupyter lab
+  pip:
+    name: jupyterlab
+    state: absent

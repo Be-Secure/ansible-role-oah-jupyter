@@ -1,0 +1,11 @@
+---
+- debug:
+    msg: "oah-install of oah.jupyer"
+
+- name: Installing jupyter lab
+  pip:
+    name: jupyterlab
+    state: latest
+
+
+

@@ -1,0 +1,6 @@
+---
+- debug:
+    msg: "oah-reset of jupyter.shell"
+#remove jupyter-shell
+
+#install jupyter-shell
