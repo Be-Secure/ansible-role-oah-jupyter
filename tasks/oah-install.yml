@@ -8,6 +8,9 @@
     state: present
     update_cache: yes
     
+- name: forget easy_install path
+  shell: hash -r
+  become: yes
 
 - name: Installing jupyter lab
   pip:
