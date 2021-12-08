@@ -16,7 +16,7 @@
 - name: Installing jupyter lab
   pip:
     name: jupyterlab
-    state: latest
+    state: present
 
 
 
