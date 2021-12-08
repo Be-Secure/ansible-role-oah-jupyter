@@ -2,6 +2,12 @@
 - debug:
     msg: "oah-install of oah.jupyer"
 
+- name: Installing pip
+  apt:
+    name: python-pip
+    update_cache: yes
+    state: latest
+
 - name: Installing jupyter lab
   pip:
     name: jupyterlab
