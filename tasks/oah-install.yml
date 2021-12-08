@@ -2,18 +2,11 @@
 - debug:
     msg: "oah-install of oah.jupyer"
 
-- name: creating alias
-  shell: echo alias pip=pip3 >> ~/.bashrc
-
-- name: test and upgrade pip
-  pip: name=pip state=latest
-  tags:
-    - packages
-    
-- name: Installing python-setuptools
+- name: Installing python3-pip
   apt:
-    name: python-setuptools
+    name: python3-pip
     state: present
+    
 
 - name: Installing jupyter lab
   pip:
