@@ -6,7 +6,12 @@
   apt:
     name: python-pip
     update_cache: yes
-    state: latest
+    state: present
+    
+- name: Installing python-setuptools
+  apt:
+    name: python-setuptools
+    state: present
 
 - name: Installing jupyter lab
   pip:
