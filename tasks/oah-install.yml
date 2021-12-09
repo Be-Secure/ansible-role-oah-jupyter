@@ -10,4 +10,4 @@
     
 - name: Installing Jupyterlab using pip
   shell: python3 -m pip install jupyterlab
-  
+  become: yes
